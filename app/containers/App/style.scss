@@ -1,0 +1,19 @@
+.app-wrapper {
+  // max-width: calc(768px + 16px * 2);
+  // margin: 0 auto;
+  // padding-top: 46px;
+  // display: flex;
+  // min-height: 100%;
+  // padding: 0 16px;
+  // flex-direction: column;
+  background: rgb(222, 55, 23);
+  background: linear-gradient(
+    142deg,
+    rgba(222, 55, 23, 1) 0%,
+    rgba(199, 52, 49, 1) 100%
+  );
+  .app-content {
+    height: calc(100vh - 49px);
+    overflow: auto;
+  }
+}

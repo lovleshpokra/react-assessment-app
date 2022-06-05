@@ -1,0 +1,12 @@
+build/
+node_modules/
+plugins/
+platforms/
+hooks/
+res/
+www/
+internals/generators/
+internals/scripts/
+package-lock.json
+yarn.lock
+package.json

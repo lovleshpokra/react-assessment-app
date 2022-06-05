@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'k010';
+  src: url('../fonts/hindi/k010.eot');
+  src: local('../fonts/hindi/k010.ttf'),
+    url('../fonts/hindi/k010.ttf') format('truetype');
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  -webkit-user-select: none; 
+  -webkit-touch-callout: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none; 
+}
+
+body {
+  font-family: 'Lato', Arial, sans-serif;
+}
+
+body.fontLoaded {
+  font-family: 'Lato', Arial, sans-serif;
+}
+
+#app {
+  background-color: transparent;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+p,
+label {
+  font-family: 'Lato', Arial, sans-serif;
+  line-height: 1.5em;
+}
+
+.ui-bg-gradient {
+  .title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    padding: 10px 18px 5px;
+  }
+  .description {
+    color: #fff;
+    opacity: 0.8;
+    font-size: 15px;
+    padding: 0 18px 25px;
+  }
+  .listing-page {
+    background-color: #fff;
+    width: calc(100% - 25px);
+    min-height: calc(100vh - 188px);
+    border-radius: 0 10px 0 0;
+  }
+}
+
+.hindi p,
+.hindi span,
+.hindi div,
+.hindi {
+  font-family: 'k010';
+}

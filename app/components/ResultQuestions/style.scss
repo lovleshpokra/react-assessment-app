@@ -1,0 +1,108 @@
+.result-question-window {
+  p {
+    margin: 0;
+    padding: 0;
+    line-height: initial;
+  }
+  .question {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    font-weight: 600;
+    .hindi {
+      font-size: 17.5px;
+      padding-top: 10px;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+  .options {
+    padding: 15px 0;
+    img {
+      max-width: 100%;
+    }
+    > div {
+      border: 1px solid #f0f0f0;
+      margin-bottom: 8px;
+      padding: 8px 8px 8px 0;
+      border-radius: 4px;
+      display: block;
+      [type='radio']:checked,
+      [type='radio']:not(:checked) {
+        position: absolute;
+        left: -9999px;
+      }
+      [type='radio']:checked + label,
+      [type='radio']:not(:checked) + label {
+        position: relative;
+        padding-left: 32px;
+        cursor: pointer;
+        line-height: 20px;
+        display: block;
+      }
+      [type='radio']:checked + label:before,
+      [type='radio']:not(:checked) + label:before {
+        content: '';
+        position: absolute;
+        left: 5px;
+        top: calc(50% - 9px);
+        width: 18px;
+        height: 18px;
+        border: 1px solid #ddd;
+        border-radius: 100%;
+        background: #fff;
+      }
+      [type='radio']:checked + label:after,
+      [type='radio']:not(:checked) + label:after {
+        content: '';
+        width: 10px;
+        height: 10px;
+        background: #cc0000;
+        position: absolute;
+        top: calc(50% - 5px);
+        left: 9px;
+        border-radius: 100%;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+      }
+      [type='radio']:not(:checked) + label:after {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+      }
+      [type='radio']:checked + label:after {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+      }
+    }
+    .option {
+      p {
+        height: auto;
+      }
+      br {
+        display: none;
+      }
+    }
+  }
+  .info-panel {
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
+    margin: 0 -10px 12px;
+    padding: 4px 7px;
+    font-size: 14px;
+    color: #000;
+    font-weight:600;
+    &::after {
+      content: "";
+      clear: both;
+      display: block;
+    }
+  }
+  .current-question {
+    img {
+      max-width: 100%;
+      height: auto !important;
+    }
+  }
+}

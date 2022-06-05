@@ -1,0 +1,20 @@
+.exam-details-drawer.books {
+  height: calc(100vh - 85px);
+  .book {
+  height: calc(100vh - 135px);
+  overflow: auto;
+  margin: -20px -20px 0;
+  padding: 20px 20px;
+  .book-img {
+    text-align: center;
+    img {
+      max-width: 100%;
+      overflow: hidden;
+      max-height: 250px;
+      border: 2px solid #999;
+      padding: 6px;
+      border-radius: 3px;
+    }
+  }
+}
+}

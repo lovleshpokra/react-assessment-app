@@ -1,0 +1,35 @@
+.exam-listing-page {
+  .listing-page {
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      li {
+        position: relative;
+        padding: 15px 35px 15px 22px;
+        border-bottom: 1px solid #ddd;
+        font-weight: 400;
+        color: #333;
+        &::after {
+          content: '>';
+          display: block;
+          position: absolute;
+          right: 12px;
+          top: calc(50% - 12px);
+          font-size: 23px;
+          transform: scaleY(1.8);
+          font-weight: 100;
+          font-stretch: ultra-expanded;
+          line-height: 1;
+          color: #000;
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+  .ant-result-500 {
+    &.ant-result {
+      padding: 30px 20px;
+    }
+  }
+}

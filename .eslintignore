@@ -1,0 +1,7 @@
+/build/
+/config/
+/dist/
+**/**.spec.js
+/*.js
+/test/unit/coverage/
+/src/assets/

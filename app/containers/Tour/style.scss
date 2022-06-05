@@ -1,0 +1,52 @@
+.tour {
+  width: 100vw;
+  height: 100vh;
+  background: #cc0000;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  .tour-slider {
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    .ant-carousel {
+      .slick-slide {
+        text-align: center;
+        height: 100vh;
+        overflow: hidden;
+        border-radius: 0;
+        padding: 0;
+        img {
+          width: 100vw;
+          height: 100vh;
+          object-fit: cover;
+        }
+      }
+      .slick-dots-bottom {
+        bottom: 65px;}
+      .slick-slide h3 {
+        color: #fff;
+      }
+    }
+  }
+  .tour-desc {
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    padding: 20vh 5% 20px;
+    background: linear-gradient(0deg, rgba(0,0,0,0.4) 25%, rgba(122,122,122,0.1) 75%, rgba(255,255,255,0) 100%);
+    button.ant-btn {
+      border-radius: 50px;
+      font-weight: 600;
+      color: #cc0000;
+      text-transform: uppercase;
+      height: 45px;
+      &:hover,
+      &:focus {
+        border-color: #cc0000;
+      }
+    }
+  }
+}

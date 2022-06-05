@@ -1,0 +1,7 @@
+export const START_EXAM = 'START_EXAM';
+export const SET_EXAMSTART = 'SET_EXAMSTART';
+export const SET_INSTRUCTIONS = 'SET_INSTRUCTIONS';
+export const GET_QUESTIONS = 'GET_QUESTIONS';
+export const SET_QUESTIONS = 'SET_QUESTIONS';
+export const RECORD_ANSWER = 'RECORD_ANSWER';
+export const SUBMIT_EXAM = 'SUBMIT_EXAM';

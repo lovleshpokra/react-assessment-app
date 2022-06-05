@@ -1,0 +1,35 @@
+.instructions {
+  padding: 15px 12px 0;
+}
+
+.exam-info {
+    .item {
+      background: rgba(255, 255, 255, 0.2);
+      color: rgba(255, 255, 255, 0.8);
+      border-radius: 5px;padding: 5px 8px;
+      >div:nth-child(2) {
+        font-weight: 600;
+        color: #FFF;
+      }
+    }
+    .ant-row .ant-col:nth-child(even) .item{
+          margin: -5px 0 -5px -5px;
+    }
+    .ant-row .ant-col:nth-child(odd) .item{
+          margin: -5px -5px -5px 0;
+    }
+}
+.instruction-html {
+height: calc(100vh - 230px);
+    overflow: auto;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    padding: 15px;
+    margin: 15px auto 0;
+    background: #FFF;
+    border-bottom: 0;
+    img {
+      max-width: 100%;
+      height: auto !important;
+    }
+}

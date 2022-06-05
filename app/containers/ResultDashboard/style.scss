@@ -1,0 +1,84 @@
+.result-dashboard {
+  height: calc(100vh - 96px);
+  overflow: auto;
+  .exam-name {
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 20px 20px 0;
+    color: #FFF;
+  }
+  .dashboard-items {
+    &::after {
+      content: '';
+      clear: both;
+      display: block;
+    }
+  }
+  .right-panel {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    background: #cc0000;
+    padding: 23px 23px 30px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+    .ant-statistic-title {
+      margin-top: 1px;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 12px;
+    }
+    .ant-statistic-content {
+      color: rgba(255, 255, 255, 1);
+    }
+    .que-panel button {
+      position: absolute;
+      right: 10%;
+      bottom: -16px;
+      width: 42px;
+      height: 42px;
+      font-size: 20px;
+      background: #f90000;
+      border-color: #f90000;
+    }
+    &::after {
+      content: '';
+      clear: both;
+      display: block;
+    }
+  }
+  .dashboard-statics {
+    text-align: center;
+    padding: 40px 20px;
+    .desc {
+      font-size: 14px;
+      font-weight: 600;
+      padding: 10px 0;color: #FFF;
+    }
+    
+    .ant-progress-text { 
+
+      color: #FFF;
+    }
+   &.top {
+     position:relative;
+     padding: 20px;
+    .ant-progress-text {
+      font-size: 20px;
+      font-weight: 600;
+      top: 40%;
+    }
+    
+    .item {
+      text-align: center;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 14px;
+      position: absolute;
+      top: 50%;
+      left: calc(50% - 62px);
+      width: 124px;
+    }
+   }
+  }
+}

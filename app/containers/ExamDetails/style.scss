@@ -1,0 +1,103 @@
+.exam-statics {
+  width: calc(100% - 25px);
+  text-align: center;
+  .summary {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px 0;
+    background: #fff;
+    width: 31%;
+    height: 70px;
+    margin: 0 0 10px 1.5%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.3);
+    &.completed {
+      color: #4caf50;
+    }
+    &.partial {
+      color: #fdd835;
+    }
+    &.pending {
+      color: #f4511e;
+    }
+    .value {
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .name {
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 10px;
+      letter-spacing: 1.2px;
+      opacity: 0.8;
+    }
+  }
+}
+.listing-page.show-status {
+  ul li {
+    &::before {
+      content: '';
+      background: #cdcdcd;
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      display: block;
+      left: 8px;
+      top: calc(50% - 4px);
+      border-radius: 50px;
+    }
+    &.completed::before {
+      background: #4caf50;
+    }
+    &.partial::before {
+      background: #fdd835;
+    }
+    &.pending::before {
+      background: #f4511e;
+    }
+  }
+}
+.no-exam {
+  font-size: 22px;
+  text-align: center;
+  width: 85%;
+  margin: 0 auto;
+  padding: 80px 20px 0;
+  font-weight: 600;
+  span {
+    opacity: 0.8;
+    font-size: 14px;
+    padding: 10px 0;
+    font-weight: 400;
+    display: block;
+  }
+}
+.exam-details-drawer {
+  height: calc(100vh - 103px);
+
+  position: relative;
+  .title {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    padding: 0 0 10px;
+    + .ant-tag {
+      margin: 0 auto;
+      display: block;
+      text-align: center;
+      width: fit-content;
+    }
+  }
+  .desc {
+    clear: both;
+    padding: 20px 0;
+  }
+  .action-buttons {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}

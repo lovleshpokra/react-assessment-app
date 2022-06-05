@@ -1,0 +1,62 @@
+.profile-info {
+  padding: 60px 0 0;
+  text-align: center;
+  position: relative;
+  .picture {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 80px;
+    border-radius: 100%;
+    border: 2px solid #FFF;
+    overflow: hidden;
+    background: #d53620;
+    position: relative;
+    z-index: 1;
+    box-sizing: content-box;
+      > span, img {
+        border-radius: 100%;
+        object-fit: cover;
+        width: 80px;
+        height: 80px;
+      }
+      >span {
+        line-height: 60px !important;
+        font-size: 40px !important;
+        margin-top: -3px;
+        background: #d43622;
+      }
+  }
+  .profile-content {
+    padding: 55px 0 25px;
+    color: #CC0000;
+    background: #FFF;
+    border-radius: 100% 100% 0 0;
+    margin-top: -40px;
+    .name {
+      font-size: 20px;
+    }
+    .desc {
+      font-size: 14px;
+      font-weight: 400;
+      opacity: 0.8;
+    }
+  }
+  .top-actions {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    color: #FFF;
+    padding: 8px 10px;
+    font-size: 20px;
+    opacity: 0.7;
+    > div {
+      padding: 8px 12px;
+    }
+    .lft {float: left;}
+    .rit {float: right}
+  }
+}

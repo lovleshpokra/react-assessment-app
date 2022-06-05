@@ -1,0 +1,50 @@
+
+  .app-header-container {
+    display: block;
+    width: 100%;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 15px;
+    clear: both;
+    &::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+    .title {
+      padding: 10px 12px 14px;
+      float: left;
+      font-size: 18px;
+      line-height: 1;
+    }
+    .header-actions {
+      padding: 2px 12px;
+      float: right;
+      font-size: 18px;
+      line-height: 1;
+       a {
+         color: #FFF;
+       }
+      .icon-manager {
+        position: relative;
+        width: 30px;
+        height: 43px;
+        display: inline-block;
+        padding: 9px 5px;
+          .count {
+            position: absolute;
+            font-size: 12px;
+            font-weight: 400;
+            background: #FFEB3B;
+            width: 10px;
+            height: 10px;
+            border-radius: 50px;
+            top: 10px;
+            right: 4px;
+            display: block;
+            text-align: center;
+            line-height: 14px;
+            color: #d9361c;
+          }     }
+    }
+  }
